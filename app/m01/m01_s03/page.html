@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Activity Template</title>
+  <!-- <link rel="stylesheet" href="./common/css/m01/CustomActivity_M01_S02.css">
+  <script src="./common/js/m01/CustomActivity_M01_S02.js"></script> -->
+ 
+</head>
+
+<body>
+  <script>
+    var actObj = new CustomJSFLTextBox();
+    actObj.init();
+    function checkCurrectFrame(num) {
+      if (actObj) {
+        actObj.checkCurrectFrame(num);
+      }
+    }
+    function destroy() {
+      actObj.destroy();
+      actObj = null;
+      destroy = undefined;
+    }
+  </script>
+</body>
+
+</html>

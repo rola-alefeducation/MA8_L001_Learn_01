@@ -1,0 +1,469 @@
+{
+  "toc_course": {
+    "fullScreen": true,
+    "title": "Exponents and Scientific Notation",
+    "subtitle": "Powers and Exponents",
+    "inst": "Click below to start your learning session.",
+    "exitInst": "Click below to End your learning session.",
+    "start": "Start Course",
+    "exit": "Exit",
+    "name": "Active Listening Essentials",
+    "toc_node": {
+      "lesson": [
+        {
+          "lesson_name": "Learn_1",
+          "lesson_xml_path": "module_1",
+          "topics": {
+            "topic": [
+              {
+                "text": "Screen 1"
+              },
+              {
+                "text": "Screen 2"
+              },
+              {
+                "text": "Screen 3"
+              },
+              {
+                "text": "Screen 4"
+              },
+              {
+                "text": "Screen 5"
+              },
+              {
+                "text": "Screen 6"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "topic": {
+    "module_1": {
+      "topic_name": "The Strategic sourcing process and Needs assessment",
+      "page": [
+        {
+          "pageID": "module_1",
+          "page_type": "audio",
+          "graphics_path": "m01/m01_s01",
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "CustomTextBox",
+              "target": "#pageFrame",
+              "templateConfigData": {
+                "bgSrc": "common/images/m1_s4_bg.jpg",
+                "x": "110",
+                "y": "100",
+                "w": "920",
+                "h": "690",
+                "headTxt": "Gym Membership",
+                "quesTxt": "Noor is joining a gym in January. They have an offer. If she gets 4 friends to join in February she gets a discount. Each of those friends will get a discount if they get 4 friends each to join in March.<br>And so on.<br>In May, how many new people will join the gym because Noor joined in January?",
+                "textField": {
+                  "y": "235",
+                  "h": "195",
+                  "placeholder": "Type your answer here."
+                },
+                "submitBtn": {
+                  "submitTxt": "Save"
+                }
+              }
+            }
+          ],
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667"
+        },
+        {
+          "pageID": "module_1",
+          "page_type": "audio",
+          "isInteractive": false,
+          "graphics_path": "m01/m01_s02",
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667",
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "TextWithSideImages",
+              "target": "#pageFrame",
+              "title": "Gym Membership",
+              "bgImage": "url(common/images/bgImage.jpg)",
+              "paraGraph": "The number of new people who joined in May can be written in <span class='textBold'>exponent form</span>.",
+              "paraGraphDimension": [
+                "auto",
+                "905px"
+              ],
+              "paraGraphPosition": [
+                "160px",
+                "80px"
+              ],
+              "images": [
+                {
+                  "src": "common/images/MA8_L001_LRN_01_S02_01.png",
+                  "style": {
+                    "position": "relative",
+                    "left": "1145px",
+                    "top": "80px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageID": "module_1",
+          "page_type": "video",
+          "graphics_path": "m01/m01_s03",
+          "videoData": {
+            "width": "1918",
+            "height": "1080",
+            "poster": "/images/imageVideo.png",
+            "css": {
+              "margin": "auto",
+              "left": "0",
+              "top": "0",
+              "right": "0",
+              "bottom": "0"
+            }
+          },
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "CustomTextBox",
+              "target": "#pageFrame",
+              "templateConfigData": {
+                "showFrame": "325",
+                "x": "50",
+                "y": "100",
+                "w": "920",
+                "h": "670",
+                "quesTxt": "A cell divides into 2 cells every minute. How many cells will there be after 10 minutes?",
+                "textField": {
+                  "y": "235",
+                  "h": "390",
+                  "placeholder": "Type your answer here."
+                },
+                "submitBtn": {
+                  "submitTxt": "Save"
+                }
+              }
+            }
+          ],
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667"
+        },
+        {
+          "pageID": "module_1",
+          "page_type": "audio",
+          "graphics_path": "m01/m01_s04",
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "CustomDND",
+              "target": "#pageFrame",
+              "title": "Drag the expressions on the right side to match the<br>equal expressions on the left side.",
+              "background": {
+                "image": "m01/m01_s04/images/bgImg.png"
+              },
+              "dndProps": {
+                "width": "410px",
+                "height": "70px"
+              },
+              "dragHolder": {
+                "type": "v",
+                "size": "450px",
+                "background": "#FFFFFF40 0% 0% no-repeat padding-box",
+                "dragPositionAbsolute": "false",
+                "fontSize": "40px",
+                "fontFamily": "Roboto-Medium"
+              },
+              "dropItems": [
+                {
+                  "dropId": "0",
+                  "css": {
+                    "top": "240px",
+                    "left": "739px"
+                  }
+                },
+                {
+                  "dropId": "1",
+                  "css": {
+                    "top": "377px",
+                    "left": "739px"
+                  }
+                },
+                {
+                  "dropId": "2",
+                  "css": {
+                    "top": "511px",
+                    "left": "739px"
+                  }
+                },
+                {
+                  "dropId": "3",
+                  "css": {
+                    "top": "645px",
+                    "left": "739px"
+                  }
+                }
+              ],
+              "dragItems": [
+                {
+                  "dropId": "0",
+                  "text": "3<p style='pointer-events:none'><sup>5</sup></p>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                },
+                {
+                  "dropId": "1",
+                  "text": "<span style='pointer-events:none'><span>b</span>&nbsp × &nbsp<span>b</span> &nbsp × &nbsp <span>a</span>&nbsp × &nbsp<span>b</span>&nbsp; × &nbsp;<span>a</span></span>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                },
+                {
+                  "dropId": "2",
+                  "text": "(−4)<p style='pointer-events:none'><sup>4</sup></p>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                },
+                {
+                  "dropId": "3",
+                  "text": "2<p style='pointer-events:none'><sup>4</sup></p>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                },
+                {
+                  "dropId": "-1",
+                  "text": "<span style='display:flex; align-items:center; pointer-events:none;'><span>b</span><p><sup>2</sup></sup>&nbsp;×&nbsp;<span>a</span><p><sup>3</sup></span>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                },
+                {
+                  "dropId": "-1",
+                  "text": "5<p style='pointer-events:none'><sup>3</sup></p>",
+                  "css": {
+                    "height": "70px",
+                    "width": "410px"
+                  }
+                }
+              ],
+              "extraTexts": [
+                {
+                  "text": "3 × 3 × 3 × 3 × 3",
+                  "css": {
+                    "top": "255px",
+                    "left": "271px",
+                    "width": "335px",
+                    "height": "48px",
+                    "fontSize": "40px",
+                    "fontFamily": "Roboto-Medium"
+                  }
+                },
+                {
+                  "text": "<p style='pointer-events:none'><span>a</span><sup>2</sup> × <span>b</span><sup>3</sup></p>",
+                  "css": {
+                    "top": "392px",
+                    "left": "280px",
+                    "width": "335px",
+                    "height": "48px",
+                    "fontSize": "40px",
+                    "fontFamily": "Roboto-Medium"
+                  }
+                },
+                {
+                  "text": "(−4) (−4) (−4) (−4)",
+                  "css": {
+                    "top": "525px",
+                    "left": "233px",
+                    "width": "424px",
+                    "height": "48px",
+                    "fontSize": "40px",
+                    "fontFamily": "Roboto-Medium"
+                  }
+                },
+                {
+                  "text": "base 2, exponent 4",
+                  "css": {
+                    "top": "661px",
+                    "left": "282px",
+                    "width": "338px",
+                    "height": "48px",
+                    "fontSize": "40px",
+                    "fontFamily": "Roboto-Medium"
+                  }
+                }
+              ],
+              "extraImages": []
+            }
+          ],
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667"
+        },
+        {
+          "pageID": "module_1",
+          "page_type": "audio",
+          "graphics_path": "m01/m01_s05",
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "CustomTextBox",
+              "target": "#pageFrame",
+              "templateConfigData": {
+                "bgSrc": "common/images/ma8_L001_LRN_m01_s05_IMG_001.jpg",
+                "x": "110",
+                "y": "100",
+                "w": "920",
+                "h": "690",
+                "quesTxt": "3<sup>2</sup> is 3 × 3.<br>3<sup>3</sup> is 3 × 3 × 3.<br><br>Think about what 3<sup>4</sup> could be? Explain your reasoning.",
+                "textField": {
+                  "y": "235",
+                  "h": "255",
+                  "placeholder": "Type your answer here."
+                },
+                "submitBtn": {
+                  "submitTxt": "Save"
+                }
+              }
+            }
+          ],
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667"
+        },
+        {
+          "pageID": "module_1",
+          "page_type": "audio",
+          "graphics_path": "m01/m01_s06",
+          "showJournal": "true,1",
+          "hasAutoJump": false,
+          "transcript_text": {
+            "id": "0",
+            "text": "<span>Welcome to “Conscious Inclusion.” </span>"
+          },
+          "ost": [
+            {
+              "title": "Dummy Text"
+            }
+          ],
+          "templateConfig": [
+            {
+              "id": "CustomTextBox",
+              "target": "#pageFrame",
+              "templateConfigData": {
+                "bgSrc": "common/images/ma8_L001_LRN_m01_s06_IMG_001.jpg",
+                "x": "110",
+                "y": "100",
+                "w": "920",
+                "h": "690",
+                "quesTxt": "We can group factors by using the <span class='toolKit' ref='Commutative Property of Multiplication' data-beakDir='top' refData=[580,193,0,0,527,590,28,-3] >Commutative Property of Multiplication</span>, and then write them in exponent form.",
+                "textField": {
+                  "y": "235",
+                  "h": "364",
+                  "placeholder": "Type your answer here."
+                },
+                "submitBtn": {
+                  "submitTxt": "Save"
+                }
+              }
+            }
+          ],
+          "page_text": "",
+          "subtitleQuepoints": "0.3~2.3666666666666667"
+        }
+      ]
+    }
+  },
+  "customToolKit": {
+    "Commutative Property of Multiplication": {
+      "title": "Vocabulary",
+      "deck": {
+        "beak": {
+          "dir": "top",
+          "pos": "0"
+        },
+        "box": {
+          "width": "385",
+          "height": "500",
+          "left": "0",
+          "top": "0",
+          "right": "0",
+          "bottom": "0"
+        },
+        "front": {
+          "content": [
+            "C/c",
+            "Commutative Property of Multiplication"
+          ],
+          "img": "./common/images/commutative_1.png"
+        },
+        "back": {
+          "content": [
+            "Commutative Property of Multiplication",
+            "خاصية تبديلية للضرب",
+            "When two or more numbers are multiplied, the product is the same; the order of the numbers does not matter."
+          ],
+          "img": "./common/images/commutative_2.png"
+        }
+      }
+    }
+  }
+}

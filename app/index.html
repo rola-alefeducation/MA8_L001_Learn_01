@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+   ISO CODES FOR LANGUAGE
+    ENGLISH: en
+   SPANISH: es
+   -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <style>
+         body {
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+         }
+
+         html {
+             -webkit-tap-highlight-color: transparent;
+             -webkit-user-select: none;
+             /* Chrome/Safari */
+             -moz-user-select: none;
+             /* Firefox */
+             -ms-user-select: none;
+             /* IE10+ */
+         }
+
+         .langdd_label {
+             font-family: "Trebuchet MS" !important;
+         }
+
+         .Start_Button {
+            background-color: #21BCB6;
+            border: 8px solid #21BCB6;
+            color: white;
+            font-family: Roboto-Bold;
+            width: 110px;
+            height: 110px;
+            border-radius: 55px;
+            font-size: 1.4em;
+            text-align: left;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+         }
+
+         .Start_Button_hover {
+             background-color: #F8F8F8;
+             color: #21BCB6;
+         }
+
+         .Start_Button .contentParent {
+            position: relative;
+             width: max-content;
+             display: grid;
+             grid-template-columns: 1fr;
+             transition: all 0.5s;
+             overflow: hidden;
+             justify-items: center;
+             color: #21BCB6;
+         }
+         
+         .Start_Button .contentParent span {
+            grid-row-start: 1;
+            grid-column-start: 1;
+         }
+
+         .Start_Button .btnIcon{
+            position: relative;
+            background: url(./common/images/homeNextIcon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+            transition: all 0.5s;
+            left: 0px;
+         }
+
+         .Start_Button .btnIconHover {             
+            left: 50px;
+         }
+
+         .Start_Button .btnText{
+            position: relative;
+            line-height: 40px;
+            text-align: left;
+            width: 50%;
+            height: 40px;
+            left:-100px;
+            transition: all 0.5s;
+             color: #21BCB6;
+         }
+
+         .Start_Button .btnTextHover {             
+            left: -18px;
+         }
+         
+         #topDiv {
+             position: absolute;
+             background-color: #e3e3e3;
+             height: 244px;
+             display: table-cell;
+             width: 100%;
+             vertical-align: middle;
+         }
+
+         #bottomDiv {
+             position: absolute;
+             top: 243px;
+             background-color: #f7f7f7;
+             height: 447px;
+             width: 100%;
+         }
+
+         #startPage {
+             width: 1920px;
+             height: 1080px;
+             left: 0px;
+             top: 0px;
+             position: absolute;
+             font-family: 'Gotham-Regular';
+             background: url('./common/images/coverPage.png');
+             background-repeat: no-repeat;
+             background-size: 100%;
+         }
+         
+         #startPage #titleHolder {
+            position: absolute;
+             background-color: #EEEEEE;
+             display: flex;
+             width: 50%;
+             min-height: 10%;
+             right: 0px;
+             box-shadow: 0 0 13px #00000029;
+             top: 50%;
+             transform: translateY(-50%);
+             border-radius: 15px 0px 0px 15px;
+         }
+         
+         
+         #startPage #titleHolder #courseTitle{
+            font-family: Roboto-Bold;
+            color: #002873;
+            padding: 3% 4%;
+            text-align: right;
+            font-size: 70px;
+            width: 100%;
+         }
+         
+         #startPage #titleHolder #courseTitle .subTitle{
+            font-family: Roboto-Regular;
+            color: #000000;
+            float: right;
+            text-align: right;
+            font-size: 45px;
+            width: 50%;
+         }
+      </style>
+      <!------------------------------------------------------------>
+      <title>Powers and Exponents</title>
+      <script>
+        var hasDropDown;
+        var globalLangSet, isCompleteTranslation=false;
+        var stageWidth;
+        var stageHeight;
+        if (typeof (globalLangSet) == "undefined") {
+            globalLangSet = "en";
+        }
+        var isEnableNextButton = true;
+        var pilotObj;
+        var scaleVal = 1;
+        var currentLocation;
+        var oStartPage;
+        window.onload = function () {
+	        var player;
+            function httpRequest(_urlStr, _typeStr, _callBackFn, _errorCallBackFn, _cnt) {
+            var cnt = 1;
+            var maxRetries = 3;
+            
+            if (typeof _cnt !== 'undefined') {
+                cnt = _cnt;
+            }
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                if (_callBackFn) {
+                    if (_typeStr.toLowerCase() === 'json') {
+                    _callBackFn(JSON.parse(this.responseText));
+                    }
+                }
+                }
+            };
+            xhttp.open('GET', _urlStr, true);
+            xhttp.send();
+            }  
+            
+            httpRequest('pathconfig.json', 'json', function (_httpData) {
+                window.basePath=_httpData.pathConfigObj.rootPath
+                console.log(basePath) 
+                var script = document.createElement('script');
+                script.src = window.basePath + 'common_core/script/filesLoader.js';
+                document.getElementsByTagName('HEAD')[0].appendChild(script);
+            });
+        }
+
+         // ======== Variable to enable/disable next button
+         function indexInit() {
+            hasDropDown = false;
+            globalLangSet, isCompleteTranslation=false;
+            stageWidth = Number($(window).width());
+            stageHeight = Number($(window).height());
+            if (typeof (globalLangSet) == "undefined") {
+            globalLangSet = "en";
+            }
+            isEnableNextButton = true;
+            pilotObj = new Pilot();
+            scaleVal = 1;
+            currentLocation = location.href;
+            oStartPage = new StartPage();
+            $(document).ready(function (e) {
+                //startTimer();
+                $.getJSON("config.json", function (json) {
+                    
+                    $("#courseTitle").html("<span style='float: right;'>"+json.courseTitle.text+"</span><span class='subTitle'>"+json.nav.modTitle+"</span>");
+                    pilotObj.init();
+                });
+            });
+         }
+         /*
+          * Following function will be called from preload.js when all the images will be preloaded.
+          */
+         function initCourse() {
+           pilotObj.updateShell();
+         }
+         
+      </script>
+   </head>
+   <body>
+      <div class="globalWrapClsHolder" style="opacity:0;">
+         <!-- MENU BAR -->
+         <div id="top-nav" aria-hidden="true">
+            <div id="lesson-progress" aria-hidden="true"></div>
+            <div id="topRightHolder" aria-hidden="true">
+                <div id="pageNumberHolder" aria-hidden="true"> <div>Page <span id="currentPageNum" class="pageNumber">00</span> of <span id="totalPageNum" class="pageNumber">00</span></div></div>
+                <div id="fullScreenHolder" aria-hidden="true"> </div>
+            </div>
+         </div>
+         <div id="settingsOuterHolder" aria-hidden="true">
+            <div id="settingsHolder" aria-hidden="true">
+
+            </div>
+        </div>
+         <canvas id="pageCnv" class="pageWrapperCls" width="1920" height="872" aria-hidden="true"></canvas>
+         <div class="globalWrapCls" aria-hidden="true">
+            <div id="pageFrame"></div>
+         </div>
+         <div id="ccdiv" aria-hidden="true"></div>
+         <div id="bot-nav" aria-hidden="true"></div>
+         <!-- START PAGE -->
+         <div id="startPage">
+            <div id = "holder" style="visibility:hidden;">
+                  <div id="titleHolder">
+                     <div id="courseTitle" tabindex="2"></div>
+                     <div style="text-align: center; display: flex; align-items: center; padding-right: 40px;">
+                        <button tabindex="0" aria-label="Launch Course" id = "startCourse" class="Start_Button">
+                           <div class="contentParent">
+                              <span class = "btnText">ENTER</span>
+                              <span class = "btnIcon"></span>
+                           </div>
+                        </button>
+                        <!--button tabindex="0" aria-label="Resume Course" id = "resumeCourse" class="Start_Button">
+                        RESUME
+                        </button>
+                        <button tabindex="0" aria-label="Restart Course" id = "restartCourse" class="Start_Button">
+                        RESTART
+                        </button-->
+                     </div>
+                  </div>
+            </div>
+         </div>
+         <div id="pagepreloader" aria-hidden="true"></div>
+         <div id="dummyHolder" aria-hidden="true"></div>
+      </div>
+   </body>
+</html>

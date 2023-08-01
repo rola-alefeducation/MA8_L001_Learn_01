@@ -1,0 +1,27 @@
+{
+  "isLinearNavigation": false,
+  "courseTitle": {
+    "text": "Powers and Exponents"
+  },
+  "nav": {
+    "modTitle": "Learn 1",
+    "next": "NEXT",
+    "prev": "BACK"
+  },
+  "courseImagesArrayData": [
+    "./common/images/bgImage.jpg",
+    "./common/images/bgImage1.png",
+    "./common/images/bgImage2.png",
+    "./common/images/bgImage3.png",
+    "./common/images/commutative_1.png",
+    "./common/images/commutative_2.png",
+    "./common/images/coverPage.png",
+    "./common/images/homeNextIcon.png",
+    "./common/images/m1_s4_bg.png",
+    "./common/images/MA8_L001_LRN_01_S02_01.png",
+    "./common/images/ma8_L001_LRN_m01_s05_IMG_001.png",
+    "./common/images/ma8_L001_LRN_m01_s06_IMG_001.png",
+    "./m01/m01_s03/images/ChapterTitle.png",
+    "./m01/m01_s03/images/imageVideo.png"
+  ]
+}
