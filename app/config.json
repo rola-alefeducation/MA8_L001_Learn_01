@@ -7,7 +7,9 @@
     "modTitle": "Learn 1",
     "next": "NEXT",
     "prev": "BACK"
-  },
+  }, 
+  "learningObjectiveText":"My objective is to use patterns to develop efficient strategies to solve problems.",
+
   "courseImagesArrayData": [
     "./common/images/bgImage.jpg",
     "./common/images/bgImage1.png",
